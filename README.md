@@ -18,6 +18,5 @@ Simulated Annealing can be parallelized thus decreasing time of at which the alg
 
 The goal is to adapt Simulated Annealing.
 ## Particular Objectives
-* Parallelize neighbor making.
 * Parallelize neighbor evaluation.
 * Reduce algorithm time duration.
