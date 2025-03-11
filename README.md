@@ -1,6 +1,6 @@
 # Simulated-Annealing
 ## Member and Contact
-* Diego Maldonado Castro  | thebrogrrs@gmail.com
+* Diego Maldonado Castro  | thebrogrrs@gmail.com | diegomaldonadocastro1805@gmail.com
 ## License
 GNU General Public License v3.0
 ## Affilation
