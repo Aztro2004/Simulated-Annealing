@@ -24,19 +24,18 @@ The goal is to adapt Simulated Annealing.
 ## Simulated-Annealing pesudo-code
 
 1. Initialize the system:
-   
-    a. Set an initial solution (state) S
-    b. Set an initial temperature T
-    c. Set a cooling schedule (e.g., T = T * alpha, where alpha is less than 1)
-    d. Set a stopping condition (e.g., maximum iterations or minimum temperature)
+   * Set an initial solution (state) S
+   * Set an initial temperature T
+   * Set a cooling schedule (e.g., T = T * alpha, where alpha is less than 1)
+   * Set a stopping condition (e.g., maximum iterations or minimum temperature)
 
 3. Repeat until stopping condition is met:
    
-    a. Generate a neighbor solution S' from the current solution S
-    b. Compute the energy difference ΔE = E(S') - E(S), where E is the objective function
-    c. If ΔE < 0 (new solution is better), accept S' as the current solution
-    d. If ΔE >= 0 (new solution is worse), accept S' with probability exp(-ΔE / T)
-    e. Update the temperature: T = T * alpha (reduce the temperature)
+      * Generate a neighbor solution S' from the current solution S
+      * Compute the energy difference ΔE = E(S') - E(S), where E is the objective function
+      * If ΔE < 0 (new solution is better), accept S' as the current solution
+      * If ΔE >= 0 (new solution is worse), accept S' with probability exp(-ΔE / T)
+      * Update the temperature: T = T * alpha (reduce the temperature)
 
 5. Return the best solution found.
 
