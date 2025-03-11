@@ -13,7 +13,7 @@ Simulated Annealing is a probabilistic technique used to find the global minimum
 This proyect aims to paralelize neighbor making and evaluation. By parallelizing this we can fasten the process at which Simulated Annealing, converges to the final temperature, thus ending the cycle and finding the best solution up until now. 
 ## Hypothesis
 
-Simulated Annealing adapted to the knapsack problem, can be parallelized thus decreasing time of at which the algorihm performs in high density search spaces.
+Simulated Annealing can be parallelized thus decreasing time of at which the algorihm performs in high density search spaces.
 ## General Objetive 
 
 The goal is to adapt Simulated Annealing.
