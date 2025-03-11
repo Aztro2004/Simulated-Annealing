@@ -20,3 +20,22 @@ The goal is to adapt Simulated Annealing.
 ## Particular Objectives
 * Parallelize neighbor evaluation.
 * Reduce algorithm time duration.
+
+## Simulated-Annealing pesudo-code
+
+1. Initialize the system:
+    a. Set an initial solution (state) S
+    b. Set an initial temperature T
+    c. Set a cooling schedule (e.g., T = T * alpha, where alpha is less than 1)
+    d. Set a stopping condition (e.g., maximum iterations or minimum temperature)
+
+2. Repeat until stopping condition is met:
+    a. Generate a neighbor solution S' from the current solution S
+    b. Compute the energy difference ΔE = E(S') - E(S), where E is the objective function
+    c. If ΔE < 0 (new solution is better), accept S' as the current solution
+    d. If ΔE >= 0 (new solution is worse), accept S' with probability exp(-ΔE / T)
+    e. Update the temperature: T = T * alpha (reduce the temperature)
+
+3. Return the best solution found.
+
+
